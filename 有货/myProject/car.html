@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车 | YOHO!BUY 有货</title>
+    <link rel="shortcut icon" href="img/yh.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/logsetall.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/car.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/logsetall.js"></script>
+</head>
+<body>
+     <!--公共头部 -->
+     <div class="head_load">
+        
+    </div>
+    <!-- 购物车本体 -->
+    <div class="car_body">
+        <div class="car_body_part">
+            <div class="car_body_tit">
+                <ul class="car_shop_step">
+                    <li>查看购物车</li>
+                    <li>填写订单</li>
+                    <li>付款，完成购买</li>
+                </ul>
+            </div>
+            <div class="car_body_tips">
+                <div class="car_body_tiptip">
+                    <a href="javascript:void(0)">X</a>
+                    <strong>温馨提示：</strong>
+                    1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。
+                </div>
+            </div>
+             <div class="car_body_list">
+                 <div class="car_cart_tit">
+                    <input type="checkbox" class="car_all_check">
+                    <p>全选</p>
+                    <p>商品信息</p>
+                    <p>单价</p>
+                    <p>数量</p>
+                    <p>小计</p>
+                    <p>操作</p>
+                </div>
+                <div class="car_ordinary">
+                    <div class="car_pre_shell">
+                        <input type="checkbox" class="car_all_check">
+                        <p>普通商品</p>
+                        <p> 再买¥299.00即可免运费</p>
+                        <span>去凑单></span>
+                    </div>
+                    <div class="car_pro_whichlist">
+                    <!-- <div class="car_promo_pool">
+                        <div class="car_pool_son">
+                            <div class="car_pool_tit">
+                                <input type="checkbox">
+                                <a href="#"><img src="img/product/lit-1.jpg" alt=""></a>
+                                <div>
+                                    <p>CHAMPION  Satin Coaches Jacket Ribbed Cuff</p>
+                                    <p>颜色：白色
+                                        尺码：M</p>
+                                </div>
+                            </div>
+                            <div class="car_pool_price">¥579.00</div>
+                            <div class="car_pool_num">
+                               <div class="car_pool_num_con">
+                                   <span class="car_pool_reduce">-</span>
+                                   <input class="car_pool_getnum" type="text" value="1">
+                                   <span class="car_pool_add">+</span>
+                               </div>
+                            </div>
+                            <div class="car_pool_totalprice">
+                                ¥579.00
+                            </div>
+                            <div class="car_pool_do">
+                                <p class='car_pool_delete'>删除</p>
+                                <p>移入收藏</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                    <div class="car_pro_bottom">
+                        <div class="car_pro_bot_do">
+                            <div class="car_pro_bot_content">
+                                <div class="car_pro_bot_fixed">
+                                    <input type="checkbox" class="car_all_check">
+                                    <span>全选</span>
+                                    <a href="#">删除选中商品</a>
+                                    <a href="#">移入收藏夹</a>
+                                    <a href="#">清空失效商品</a>
+                                </div>
+                                <div class="pro_bot_totalNum">已选商品<span id="my_totalNum">1</span>件</div>
+                                <div class="pro_bot_totalPrice">
+                                    <p>应付金额（不含邮费）:<span id="my_totalPrice">¥579.00</span></p>
+                                    <p>活动优惠：¥ 0.00</p>
+                                </div>
+                                <div class="pro_bot_gotobuy">去结算</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car_empty_img">
+                <div class="car_empty_list">
+                    <img src="img/empty_car.png" alt="">
+                    <p>购物车空空的哦，去看看心仪的商品吧~</p>
+                    <a class="goto_index" href="#">去购物</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 公共尾部 -->
+     <div class="footer_load"></div>
+     <!-- 侧边按钮 -->
+     <div id="fixed_load">
+ 
+     </div>
+</body>
+</html>
+<script src="js/car.js"></script>
+<script>
+ $(function(){
+        $('.head_load').load('logsetall.html',function(){
+
+        })
+        $('.footer_load').load('footer.html',function(){
+            
+        })
+        $('#fixed_load').load('fixed.html', function () {
+
+        })
+    })
+</script>

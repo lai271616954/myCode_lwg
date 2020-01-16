@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新用户注册</title>
+    <link rel="shortcut icon" href="img/yh.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/logsetall.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/logsetall.js"></script>
+    <script src="js/set.js"></script>
+</head>
+<body>
+    <!-- 头部接口 -->
+    <div class="head_load">
+
+    </div>
+    <div class="log_body">
+        <div class="log_body_block">
+            <div class="log_body_block_left">
+                <a href="#"><img src="img/set/set-1.jpg" alt=""></a>
+            </div>
+            <div class="log_body_block_right">
+                <div class="log_body_content">
+                    <ul class="log_body_content_ullist">
+                        <li class="log_body_con_list">
+                            <select name="regional" class="region">
+                                <option value="+61">澳大利亚</option>
+                                <option value="+82">韩国</option>
+                                <option value="+1">加拿大</option>
+                                <option value="+60">马来西亚</option>
+                                <option value="+1">美国</option>
+                                <option value="+81">日本</option>
+                                <option value="+65">新加坡</option>
+                                <option value="+44">英国</option>
+                                <option value="+86" selected>中国</option>
+                                <option value="+853">中国澳门</option>
+                                <option value="+886">中国台湾</option>
+                                <option value="+852">中国香港</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="country_code">+86</span>
+                            <input type="text" class="phone_number" maxlength="11" placeholder="请输入手机号码">
+                        </li>
+                        <li>
+                            <div class="captcha_img">
+                                <span>请将下列图片点击翻转至正确方向</span>
+                                <a>换一批</a>
+                            </div>
+                            <div class="captcha_img_list">
+                                <span href="#"></span>
+                                <span href="#"></span>
+                                <span href="#"></span>
+                                <span href="#"></span>
+                            </div>
+                        </li>
+                        <li class="log_body_content_lilist">
+                            <input class="phone_message_load" type="text" placeholder="短信验证码" maxlength="4">
+                            <input type="button" value="获取短信验证码">
+                        </li>
+                        <li>
+                            <input class="password_load" type="password" placeholder="设置密码" maxlength="20">
+                            <div class="password_load_span">
+                                <span>低</span>
+                                <span>中</span>
+                                <span>高</span>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="潮流口令(非必填)">
+                        </li>
+                        <li>
+                            <div>注册即表示您已阅读并同意 </div>
+                            <a href="#">有货用户服务协议</a>
+                            <a href="#">有货隐私条款</a>
+                        </li>
+                        <li>
+                            <a class="set_success" href="javascript:void(0)">立 即 注 册</a>
+                            <div>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>我已注册YOHO!BUY 有货账号<a href="#">快速登录</a></li>
+                    </ul>
+                    <div class="err-tip" id='err-tip'>请输入手机号</div>
+                    <div class="err-tip2" id='err-tip2'>请输入验证码</div>
+                    <div class="err-tip3" id='err-tip3'>请输入密码</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部接口 -->
+    <div class="footer_load"></div>
+     <!-- 侧边按钮 -->
+     <div id="fixed_load">
+
+    </div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.head_load').load('logsetall.html',function(){
+
+        })
+        $('.footer_load').load('footer.html',function(){
+            
+        })
+        $('#fixed_load').load('fixed.html', function () {
+
+        })
+        //登陆注册页面跳转
+     $('.mysinglelog').click(function(){
+        $(location).attr('href', 'log.html');
+    })
+    $('.mysingleset').click(function(){
+        $(location).attr('href', 'set.html');
+    })
+    })
+</script>

@@ -1,0 +1,76 @@
+.index_fixbtn{
+    position: fixed;
+    width: 60px;
+    height: 140px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1500;
+    display: none;
+}
+.index_fixbtn a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    opacity: .5;
+    position: relative;
+}
+.index_fixbtn a:nth-child(1) div{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/sprite.png);
+    background-position: -71px 0;
+    background-size: 123px 122px;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -14px;
+}
+.index_fixbtn a:nth-child(2){
+    margin-top: 20px;
+    position: relative;
+}
+.index_fixbtn a:nth-child(2) img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.index_fixbtn_wechathover{
+    position: absolute;
+    width: 296px;
+    height: 150px;
+    left: -306px;
+    top:-60px;
+    z-index: 1500;
+    display: none;
+    border: none;
+}
+.index_fixbtn_wechathover div:nth-child(1){
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-left: 20px;
+}
+.index_fixbtn_wechathover div:nth-child(2){
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.wechat_plist{
+    font-size: 11px;
+    text-align: center;
+}

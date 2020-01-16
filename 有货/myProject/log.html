@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <link rel="shortcut icon" href="img/yh.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/logsetall.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/logsetall.js"></script>
+    <script src="js/log.js"></script>
+</head>
+<body>
+     <!--公共头部 -->
+     <div class="head_load">
+        
+    </div>
+    <!-- logbody -->
+    <div class="log_body">
+        <div class="log_body_block">
+            <div class="log_body_block_left">
+                <a href="#"><img src="img/set/set-1.jpg" alt=""></a>
+            </div>
+            <div class="log_body_block_right">
+                <div class="log_body_content">
+                    <ul class="log_body_content_ullist">
+                        <li>
+                            <div></div>
+                            <div>扫码登录更安全</div>
+                        </li>
+                        <li>
+                            <div>会员登陆</div>
+                            <div>中国+86</div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div class="log_switch">
+                                <div class="log_switch_selected">普通登录</div>
+                                <div>手机验证码登录</div>
+                            </div>
+                        </li>
+                        <li>
+                            <input maxlength="11" class="log_phoneNumber" type="text" placeholder="邮箱/手机密码">
+                        </li>
+                        <li>
+                            <input maxlength="20" class="log_password" type="password" placeholder="密码">
+                        </li>
+                        <li class="captcha_lilist">
+                            <div class="captcha_img">
+                                <span>请将下列图片点击翻转至正确方向</span>
+                                <a>换一批</a>
+                            </div>
+                            <div class="captcha_img_list">
+                                <span href="#"></span>
+                                <span href="#"></span>
+                                <span href="#"></span>
+                                <span href="#"></span>
+                            </div>
+                        </li>
+                        <li class="log_content_lili">
+                            <div>登 录</div>
+                        </li>
+                        <li class="log_content_cookie">
+                            <div>
+                                <input type="checkbox" class="log_free" data-ck="false">
+                                <span>记住登陆状态</span>
+                            </div>
+                            <div>
+                                <a href="">忘记密码</a>
+                                <span>|</span>
+                                <a class="log_content_cookie_childcolor" href="">快速注册</a>
+                            </div>
+                        </li>
+                        <li class="log_content_icon">
+                            <a href="#"><span></span></a>
+                            <a href="#"><span></span></a>
+                            <a href="#"><span></span></a>
+                        </li>
+                    </ul>
+                    <div class="err-tip" id='err-tip'>请输入手机号</div>
+                    <div class="err-tip2" id='err-tip2'>请输入密码</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 公共尾部 -->
+    <div class="footer_load"></div>
+    <!-- 侧边按钮 -->
+    <div id="fixed_load">
+
+    </div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.head_load').load('logsetall.html',function(){
+
+        })
+        $('.footer_load').load('footer.html',function(){
+            
+        })
+        $('#fixed_load').load('fixed.html', function () {
+
+        })
+    })
+</script>
