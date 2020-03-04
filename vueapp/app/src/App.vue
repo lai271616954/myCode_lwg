@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      hello world
+      hello world vue
   </div>
 </template>
 
