@@ -1,0 +1,134 @@
+/* 自带css */
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 自带结束 */
+
+html{
+    font-size: 26.67vw;
+}
+/* music */
+#music{
+    position: fixed;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    top: .15rem;
+    right: .15rem;
+    z-index: 1000;
+    animation: music 3s linear infinite;
+}
+#music img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes music{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.audiomusic{
+    height: 0;
+}
+.swiper-slide{
+    background-color: #c12529;
+    text-align: center;
+}
+/* 第一页 */
+.bigimg{
+    width: .5rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 1.6rem;
+    left: .4rem;
+}
+.bigimg img{
+    width: 100%;
+    height: 100%;
+}
+.bigtit{
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+}
+.bigtit p{
+    margin: 0 0;
+}
+.bigtit p:nth-child(1){
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.53rem;
+}
+.bigtit p:nth-child(2){
+    font-family: 'Courier New', Courier, monospace;
+    font-size:0.53rem;
+}
+.bigtit p:nth-child(3){
+    font-size:0.45rem;
+}
+.someone{
+    position: absolute;
+    top: 3.3rem;
+    left: 0.7rem;
+    z-index: 1000;
+}
+.happy{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.25rem;
+    margin-left: -0.25rem;
+}
+.happy img{
+    width: 100%;
+    height: 100%;
+}
+.bigbai{
+    width: 100%;
+    height: 2.4rem;
+    position: absolute;
+    bottom: 0;
+}
+.bigbai img{
+    width: 100%;
+    height: 100%;
+}
+.bigbai_tit{
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    left: 0.55rem;
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    z-index: 2000;
+}
+.bigbai_tit p{
+    margin: 3px 0;
+}
+.bigbai_tit p:nth-child(2){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bigbai_tit p:nth-child(3){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
